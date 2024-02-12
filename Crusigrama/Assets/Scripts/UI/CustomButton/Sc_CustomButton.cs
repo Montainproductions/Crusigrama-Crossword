@@ -6,10 +6,10 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using System.Threading;
 using Unity.VisualScripting;
+using TMPro;
 
 public class Sc_CustomButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerClickHandler
 {
-
     [SerializeField]
     private string menuGroup;
 
@@ -23,6 +23,7 @@ public class Sc_CustomButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
     [System.Serializable]
     public class CustomUIEvent : UnityEvent { }
     public CustomUIEvent OnEvent;
+
 
     IEnumerator Transition(Vector3 newSize, Color newColor, float transitionTime)
     {
