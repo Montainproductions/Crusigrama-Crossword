@@ -7,9 +7,7 @@ using UnityEngine;
 public class ScrObj_HintInfo : ScriptableObject
 {
 
-    [SerializeField]
     public TextMeshProUGUI hint;
 
-    [SerializeField]
     public string answer;
 }

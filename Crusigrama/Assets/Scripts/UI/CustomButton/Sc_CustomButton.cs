@@ -11,9 +11,6 @@ using TMPro;
 public class Sc_CustomButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerClickHandler
 {
     [SerializeField]
-    private string menuGroup;
-
-    [SerializeField]
     private Image buttonBackground;
     [SerializeField]
     private Vector3 startVector, enteredVector, downVector;
