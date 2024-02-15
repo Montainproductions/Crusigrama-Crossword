@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8b5b4f2cff6e95a4785e6a464b0a8f11
+guid: da207205ccbc9344a895ec2483209c82
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2461342616765104174
-    second: BaseCrusigrama_0
+      213: -6327435203508530683
+    second: 243a_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BaseCrusigrama_0
+      name: 243a_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1120
-        height: 724
+        width: 476
+        height: 345
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2df7f294eed87ddd0800000000000000
-      internalID: -2461342616765104174
+      spriteID: 5029293e43f6038a0800000000000000
+      internalID: -6327435203508530683
       vertices: []
       indices: 
       edges: []
@@ -169,7 +169,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      243a_0: -6327435203508530683
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
