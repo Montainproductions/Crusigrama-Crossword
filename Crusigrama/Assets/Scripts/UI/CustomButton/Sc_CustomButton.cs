@@ -8,13 +8,12 @@ using System.Threading;
 using Unity.VisualScripting;
 using TMPro;
 
-public class Sc_CustomButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerClickHandler
+public class Sc_CustomButton : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField]
+    //IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler,
+
     private Image buttonBackground;
-    [SerializeField]
     private Vector3 startVector, enteredVector, downVector;
-    [SerializeField]
     private Color startColor, enteredColor, downColor;
 
     [System.Serializable]
@@ -22,7 +21,7 @@ public class Sc_CustomButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public CustomUIEvent OnEvent;
 
 
-    IEnumerator Transition(Vector3 newSize, Color newColor, float transitionTime)
+    /*IEnumerator Transition(Vector3 newSize, Color newColor, float transitionTime)
     {
         float timer = 0;
         Vector3 startSize = transform.localScale;
@@ -50,11 +49,11 @@ public class Sc_CustomButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnPointerDown(PointerEventData eventData)
     {
         StartCoroutine(Transition(downVector, downColor, 0.3f));
-    }
+    }*/
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        StartCoroutine(Transition(startVector, startColor, 0.02f));
+        //StartCoroutine(Transition(startVector, startColor, 0.02f));
         OnEvent.Invoke();
         Debug.Log("UI Button Clicked");
     }

@@ -14,15 +14,23 @@ public class Sc_LevelManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI bigTextComponent;
 
-    [SerializeField]
     private Sc_HintInfo hintInfo;
 
     private string answer;
+
+    [SerializeField]
+    private GameObject box;
+
+    public float rotationSpeed = 2f;
+    // Maximum rotation
+    private float targetRotation = 10f;
+
 
     // Start is called before the first frame update
     void Start()
     {
         bigButton.SetActive(false);
+        SetAllTextToInvis();
     }
 
     public void SetAllTextToInvis()
@@ -38,29 +46,62 @@ public class Sc_LevelManager : MonoBehaviour
         bigButton.SetActive(true);
 
         this.hintInfo = hintInfo;
-        bigTextComponent = hintInfo.hint;
+        bigTextComponent.text = hintInfo.hint.text;
         answer = hintInfo.answer;
     }
 
     public void CloseButton()
     {
         hintInfo = null;
-        bigTextComponent = null;
-        answer = null;
+        bigTextComponent.text = " ";
+        answer = " ";
 
         bigButton.SetActive(false);
     }
 
     public void CheckAnswer(TextMeshProUGUI playerAnswer)
     {
-        if(answer != playerAnswer.text)
+        StartCoroutine(CheckAnswerIE(playerAnswer));
+    }
+
+    public IEnumerator CheckAnswerIE(TextMeshProUGUI playerAnswer)
+    {
+        Debug.Log(answer);
+        Debug.Log(playerAnswer.text);
+        Debug.Log(answer.Equals(playerAnswer.text));
+        if (!answer.Equals(playerAnswer.text))
         {
-            ///Return ScreenShake
-            ///For 3-5 seconds randomly choose a direction in the x,y cordtinates and slightly move the game object Biggerbutton that direction. Then restart to 0
+            Debug.Log("Fail");
+            //Set rotation change
+            float startTime = Time.time;
+            float elapsedTime = 0f;
+            float randomRotation = Random.Range(-10f, 10f);
+
+            //Rotate for x seconds
+            while (elapsedTime < 5f)
+            {
+                float rotationAmount = Mathf.Lerp(0f, randomRotation, elapsedTime / 5f);
+                box.transform.rotation = Quaternion.Euler(0f, 0f, rotationAmount);
+                elapsedTime += Time.deltaTime;
+            }
+
+            float originalRotation = transform.rotation.eulerAngles.z;
+            float returnDuration = Mathf.Abs(originalRotation) / rotationSpeed; // Time to return to original rotation
+            float returnStartTime = Time.time;
+            while (Time.time < returnStartTime + returnDuration)
+            {
+                float currentRotation = Mathf.Lerp(randomRotation, 0f, (Time.time - returnStartTime) / returnDuration);
+                box.transform.rotation = Quaternion.Euler(0f, 0f, currentRotation);
+                yield return null;
+            }
+            box.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         }
         else
         {
+            Debug.Log("Succed");
             hintInfo.ActivateLetters();
         }
+
+        yield return null;
     }
 }
