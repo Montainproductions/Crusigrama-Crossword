@@ -881,8 +881,10 @@ GameObject:
   m_Component:
   - component: {fileID: 29937951}
   - component: {fileID: 29937950}
+  - component: {fileID: 29937953}
+  - component: {fileID: 29937952}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (21)
+  m_Name: Rounded Rectangle_0 (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -958,6 +960,68 @@ Transform:
   - {fileID: 131615744}
   m_Father: {fileID: 1055720453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &29937952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29937949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23907096931e4e4fabe7138e8511395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 564181572}
+        m_TargetAssemblyTypeName: Sc_LevelManager, Assembly-CSharp
+        m_MethodName: OpenButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 29937953}
+          m_ObjectArgumentAssemblyTypeName: Sc_HintInfo, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 564181570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ab1be58c3933eee40aee84d72a163ca0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &29937953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29937949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993be56cf6b96364cbafe9448463d9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint: {fileID: 131615745}
+  answer: Celibato
+  letterPositions:
+  - {fileID: 213615838}
+  - {fileID: 465400090}
+  - {fileID: 1882421489}
+  - {fileID: 1334951129}
+  - {fileID: 485861337}
+  - {fileID: 413061955}
+  - {fileID: 1020395247}
+  - {fileID: 1873920554}
 --- !u!1 &32686300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,8 +1168,10 @@ GameObject:
   m_Component:
   - component: {fileID: 52040812}
   - component: {fileID: 52040811}
+  - component: {fileID: 52040814}
+  - component: {fileID: 52040813}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (15)
+  m_Name: Rounded Rectangle_0 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1181,6 +1247,65 @@ Transform:
   - {fileID: 1275057654}
   m_Father: {fileID: 1055720453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &52040813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52040810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23907096931e4e4fabe7138e8511395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 564181572}
+        m_TargetAssemblyTypeName: Sc_LevelManager, Assembly-CSharp
+        m_MethodName: OpenButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 52040814}
+          m_ObjectArgumentAssemblyTypeName: Sc_HintInfo, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 564181570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ab1be58c3933eee40aee84d72a163ca0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &52040814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52040810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993be56cf6b96364cbafe9448463d9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint: {fileID: 1275057655}
+  answer: Roman
+  letterPositions:
+  - {fileID: 450707140}
+  - {fileID: 813896150}
+  - {fileID: 1260203688}
+  - {fileID: 721803132}
+  - {fileID: 1590639511}
 --- !u!1 &65261570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,7 +1986,7 @@ GameObject:
   - component: {fileID: 95314572}
   - component: {fileID: 95314571}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (9)
+  m_Name: Rounded Rectangle_0 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5324,7 +5449,7 @@ GameObject:
   - component: {fileID: 198417190}
   - component: {fileID: 198417189}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (29)
+  m_Name: Rounded Rectangle_0 (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5489,8 +5614,10 @@ GameObject:
   m_Component:
   - component: {fileID: 204402974}
   - component: {fileID: 204402973}
+  - component: {fileID: 204402976}
+  - component: {fileID: 204402975}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (19)
+  m_Name: Rounded Rectangle_0 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5566,6 +5693,66 @@ Transform:
   - {fileID: 139246380}
   m_Father: {fileID: 1055720453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &204402975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204402972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23907096931e4e4fabe7138e8511395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 564181572}
+        m_TargetAssemblyTypeName: Sc_LevelManager, Assembly-CSharp
+        m_MethodName: OpenButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 204402976}
+          m_ObjectArgumentAssemblyTypeName: Sc_HintInfo, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 564181570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ab1be58c3933eee40aee84d72a163ca0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &204402976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204402972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993be56cf6b96364cbafe9448463d9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint: {fileID: 139246381}
+  answer: Browne
+  letterPositions:
+  - {fileID: 1770862140}
+  - {fileID: 1590639511}
+  - {fileID: 25077603}
+  - {fileID: 634059017}
+  - {fileID: 1114004938}
+  - {fileID: 1958048597}
 --- !u!1 &207300865
 GameObject:
   m_ObjectHideFlags: 0
@@ -6009,7 +6196,7 @@ GameObject:
   - component: {fileID: 224111008}
   - component: {fileID: 224111007}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (4)
+  m_Name: Rounded Rectangle_0 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9126,8 +9313,10 @@ GameObject:
   m_Component:
   - component: {fileID: 339025944}
   - component: {fileID: 339025945}
+  - component: {fileID: 339025947}
+  - component: {fileID: 339025946}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (51)
+  m_Name: Rounded Rectangle_0 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9203,6 +9392,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &339025946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339025943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23907096931e4e4fabe7138e8511395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 564181572}
+        m_TargetAssemblyTypeName: Sc_LevelManager, Assembly-CSharp
+        m_MethodName: OpenButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 339025947}
+          m_ObjectArgumentAssemblyTypeName: Sc_HintInfo, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 564181570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ab1be58c3933eee40aee84d72a163ca0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &339025947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339025943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993be56cf6b96364cbafe9448463d9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint: {fileID: 1390148629}
+  answer: Yola
+  letterPositions:
+  - {fileID: 1935322110}
+  - {fileID: 1882421489}
+  - {fileID: 141496254}
+  - {fileID: 687777236}
 --- !u!1 &339842828
 GameObject:
   m_ObjectHideFlags: 0
@@ -9295,7 +9542,7 @@ GameObject:
   - component: {fileID: 344333257}
   - component: {fileID: 344333256}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (2)
+  m_Name: Rounded Rectangle_0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9438,7 +9685,7 @@ GameObject:
   - component: {fileID: 348059711}
   - component: {fileID: 348059710}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (26)
+  m_Name: Rounded Rectangle_0 (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14023,7 +14270,7 @@ GameObject:
   - component: {fileID: 490236174}
   - component: {fileID: 490236173}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (6)
+  m_Name: Rounded Rectangle_0 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14870,8 +15117,10 @@ GameObject:
   m_Component:
   - component: {fileID: 516761304}
   - component: {fileID: 516761303}
+  - component: {fileID: 516761306}
+  - component: {fileID: 516761305}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (17)
+  m_Name: Rounded Rectangle_0 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14947,6 +15196,65 @@ Transform:
   - {fileID: 1403419959}
   m_Father: {fileID: 1055720453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &516761305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516761302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23907096931e4e4fabe7138e8511395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 564181572}
+        m_TargetAssemblyTypeName: Sc_LevelManager, Assembly-CSharp
+        m_MethodName: OpenButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 516761306}
+          m_ObjectArgumentAssemblyTypeName: Sc_HintInfo, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 564181570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ab1be58c3933eee40aee84d72a163ca0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &516761306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516761302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993be56cf6b96364cbafe9448463d9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint: {fileID: 1403419960}
+  answer: Inonu
+  letterPositions:
+  - {fileID: 1334951129}
+  - {fileID: 1775655741}
+  - {fileID: 25077603}
+  - {fileID: 1013153444}
+  - {fileID: 1620856933}
 --- !u!1 &518407428
 GameObject:
   m_ObjectHideFlags: 0
@@ -24451,7 +24759,7 @@ GameObject:
   - component: {fileID: 845647748}
   - component: {fileID: 845647747}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (25)
+  m_Name: Rounded Rectangle_0 (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25636,8 +25944,10 @@ GameObject:
   m_Component:
   - component: {fileID: 872973398}
   - component: {fileID: 872973397}
+  - component: {fileID: 872973400}
+  - component: {fileID: 872973399}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (20)
+  m_Name: Rounded Rectangle_0 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25713,6 +26023,65 @@ Transform:
   - {fileID: 765800559}
   m_Father: {fileID: 1055720453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &872973399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872973396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23907096931e4e4fabe7138e8511395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 564181572}
+        m_TargetAssemblyTypeName: Sc_LevelManager, Assembly-CSharp
+        m_MethodName: OpenButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 872973400}
+          m_ObjectArgumentAssemblyTypeName: Sc_HintInfo, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 564181570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ab1be58c3933eee40aee84d72a163ca0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &872973400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872973396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993be56cf6b96364cbafe9448463d9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint: {fileID: 765800560}
+  answer: Noiva
+  letterPositions:
+  - {fileID: 1775655741}
+  - {fileID: 207923415}
+  - {fileID: 2026426610}
+  - {fileID: 1473322508}
+  - {fileID: 1313680685}
 --- !u!1 &875674663
 GameObject:
   m_ObjectHideFlags: 0
@@ -26076,7 +26445,7 @@ GameObject:
   - component: {fileID: 881810685}
   - component: {fileID: 881810686}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0
+  m_Name: Rounded Rectangle_0 (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26186,7 +26555,7 @@ GameObject:
   - component: {fileID: 885264281}
   - component: {fileID: 885264280}
   m_Layer: 5
-  m_Name: TextBox2/3 (13)
+  m_Name: Rounded Rectangle_0 (61)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26225,8 +26594,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hint: {fileID: 1061334992}
-  answer: 123123
-  letterPositions: []
+  answer: Jodie
+  letterPositions:
+  - {fileID: 2108793824}
+  - {fileID: 1640762461}
+  - {fileID: 604932331}
+  - {fileID: 245725019}
+  - {fileID: 1756062697}
 --- !u!114 &885264281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26254,7 +26628,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 564181572}
         m_TargetAssemblyTypeName: Sc_LevelManager, Assembly-CSharp
         m_MethodName: OpenButton
         m_Mode: 2
@@ -26747,7 +27121,7 @@ GameObject:
   - component: {fileID: 910696912}
   - component: {fileID: 910696911}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0
+  m_Name: Rounded Rectangle_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27028,7 +27402,7 @@ GameObject:
   - component: {fileID: 920489921}
   - component: {fileID: 920489920}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (23)
+  m_Name: Rounded Rectangle_0 (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27681,7 +28055,7 @@ GameObject:
   - component: {fileID: 940662938}
   - component: {fileID: 940662939}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0
+  m_Name: Rounded Rectangle_0 (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29950,7 +30324,7 @@ GameObject:
   - component: {fileID: 1013140804}
   - component: {fileID: 1013140803}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (30)
+  m_Name: Rounded Rectangle_0 (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30585,8 +30959,8 @@ RectTransform:
   m_LocalScale: {x: 0.7556078, y: 0.9345714, z: 1.8084878}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 910696910}
   - {fileID: 336256783}
+  - {fileID: 910696910}
   - {fileID: 1113919224}
   - {fileID: 1388056787}
   - {fileID: 1970327527}
@@ -30634,22 +31008,22 @@ RectTransform:
   - {fileID: 1663024793}
   - {fileID: 1248452379}
   - {fileID: 661932806}
-  - {fileID: 1346446281}
-  - {fileID: 940662938}
-  - {fileID: 881810684}
   - {fileID: 732428625}
   - {fileID: 1807096537}
   - {fileID: 1723918866}
   - {fileID: 1854251831}
   - {fileID: 1608326813}
   - {fileID: 1921148483}
+  - {fileID: 1346446281}
   - {fileID: 1540138252}
   - {fileID: 979652039}
   - {fileID: 1962052376}
   - {fileID: 1811185275}
   - {fileID: 1928546568}
-  - {fileID: 2038839818}
   - {fileID: 240346442}
+  - {fileID: 2038839818}
+  - {fileID: 940662938}
+  - {fileID: 881810684}
   - {fileID: 885264279}
   m_Father: {fileID: 1892440557}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31452,7 +31826,7 @@ GameObject:
   - component: {fileID: 1080859806}
   - component: {fileID: 1080859805}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (8)
+  m_Name: Rounded Rectangle_0 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32381,7 +32755,7 @@ GameObject:
   - component: {fileID: 1113919227}
   - component: {fileID: 1113919226}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (1)
+  m_Name: Rounded Rectangle_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32933,7 +33307,7 @@ GameObject:
   - component: {fileID: 1122468327}
   - component: {fileID: 1122468326}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (7)
+  m_Name: Rounded Rectangle_0 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36161,7 +36535,7 @@ GameObject:
   - component: {fileID: 1232560605}
   - component: {fileID: 1232560604}
   m_Layer: 5
-  m_Name: Text (TMP) (45)
+  m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37608,8 +37982,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1273834932}
   - component: {fileID: 1273834931}
+  - component: {fileID: 1273834934}
+  - component: {fileID: 1273834933}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (11)
+  m_Name: Rounded Rectangle_0 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37685,6 +38061,62 @@ Transform:
   - {fileID: 1986597096}
   m_Father: {fileID: 1055720453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1273834933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273834930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23907096931e4e4fabe7138e8511395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 564181572}
+        m_TargetAssemblyTypeName: Sc_LevelManager, Assembly-CSharp
+        m_MethodName: OpenButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1273834934}
+          m_ObjectArgumentAssemblyTypeName: Sc_HintInfo, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 564181570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ab1be58c3933eee40aee84d72a163ca0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1273834934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273834930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993be56cf6b96364cbafe9448463d9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint: {fileID: 1986597097}
+  answer: To
+  letterPositions:
+  - {fileID: 194098670}
+  - {fileID: 1202778684}
 --- !u!1 &1275057653
 GameObject:
   m_ObjectHideFlags: 0
@@ -39123,7 +39555,7 @@ GameObject:
   - component: {fileID: 1346446281}
   - component: {fileID: 1346446280}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (1)
+  m_Name: Rounded Rectangle_0 (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39672,8 +40104,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1365125480}
   - component: {fileID: 1365125479}
+  - component: {fileID: 1365125482}
+  - component: {fileID: 1365125481}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (10)
+  m_Name: Rounded Rectangle_0 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39749,6 +40183,62 @@ Transform:
   - {fileID: 1169617203}
   m_Father: {fileID: 1055720453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1365125481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365125478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23907096931e4e4fabe7138e8511395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 564181572}
+        m_TargetAssemblyTypeName: Sc_LevelManager, Assembly-CSharp
+        m_MethodName: OpenButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1365125482}
+          m_ObjectArgumentAssemblyTypeName: Sc_HintInfo, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 564181570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ab1be58c3933eee40aee84d72a163ca0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1365125482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365125478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993be56cf6b96364cbafe9448463d9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint: {fileID: 1169617204}
+  answer: PN
+  letterPositions:
+  - {fileID: 348391631}
+  - {fileID: 1746951212}
 --- !u!1 &1367066388
 GameObject:
   m_ObjectHideFlags: 0
@@ -40479,7 +40969,7 @@ GameObject:
   - component: {fileID: 1388056789}
   - component: {fileID: 1388056788}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0
+  m_Name: Rounded Rectangle_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41579,7 +42069,7 @@ GameObject:
   - component: {fileID: 1423000573}
   - component: {fileID: 1423000572}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (28)
+  m_Name: Rounded Rectangle_0 (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42570,6 +43060,18 @@ Transform:
   - {fileID: 1058637605}
   - {fileID: 655406760}
   - {fileID: 1320574488}
+  - {fileID: 1125171661}
+  - {fileID: 1243526365}
+  - {fileID: 1958718687}
+  - {fileID: 1651217008}
+  - {fileID: 1756062698}
+  - {fileID: 1567918811}
+  - {fileID: 896538295}
+  - {fileID: 1662364915}
+  - {fileID: 1770135612}
+  - {fileID: 277659527}
+  - {fileID: 1488968296}
+  - {fileID: 155656314}
   - {fileID: 684215332}
   - {fileID: 1778132979}
   - {fileID: 563317050}
@@ -42736,18 +43238,6 @@ Transform:
   - {fileID: 1010401353}
   - {fileID: 1873920555}
   - {fileID: 1313680686}
-  - {fileID: 1125171661}
-  - {fileID: 1243526365}
-  - {fileID: 1958718687}
-  - {fileID: 1651217008}
-  - {fileID: 1756062698}
-  - {fileID: 1567918811}
-  - {fileID: 896538295}
-  - {fileID: 1662364915}
-  - {fileID: 1770135612}
-  - {fileID: 277659527}
-  - {fileID: 1488968296}
-  - {fileID: 155656314}
   m_Father: {fileID: 1818856721}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1458317625
@@ -44452,8 +44942,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1505161957}
   - component: {fileID: 1505161956}
+  - component: {fileID: 1505161959}
+  - component: {fileID: 1505161958}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (16)
+  m_Name: Rounded Rectangle_0 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44529,6 +45021,67 @@ Transform:
   - {fileID: 1613067863}
   m_Father: {fileID: 1055720453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1505161958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505161955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23907096931e4e4fabe7138e8511395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 564181572}
+        m_TargetAssemblyTypeName: Sc_LevelManager, Assembly-CSharp
+        m_MethodName: OpenButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1505161959}
+          m_ObjectArgumentAssemblyTypeName: Sc_HintInfo, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 564181570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ab1be58c3933eee40aee84d72a163ca0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1505161959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505161955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993be56cf6b96364cbafe9448463d9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint: {fileID: 1613067864}
+  answer: Epsilon
+  letterPositions:
+  - {fileID: 996969567}
+  - {fileID: 1746951212}
+  - {fileID: 1316656428}
+  - {fileID: 1325452973}
+  - {fileID: 1512377877}
+  - {fileID: 721803132}
+  - {fileID: 1013153444}
 --- !u!1 &1507109984
 GameObject:
   m_ObjectHideFlags: 0
@@ -45298,8 +45851,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1522636327}
   - component: {fileID: 1522636326}
+  - component: {fileID: 1522636329}
+  - component: {fileID: 1522636328}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (14)
+  m_Name: Rounded Rectangle_0 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45375,6 +45930,62 @@ Transform:
   - {fileID: 704427174}
   m_Father: {fileID: 1055720453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1522636328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522636325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23907096931e4e4fabe7138e8511395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 564181572}
+        m_TargetAssemblyTypeName: Sc_LevelManager, Assembly-CSharp
+        m_MethodName: OpenButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1522636329}
+          m_ObjectArgumentAssemblyTypeName: Sc_HintInfo, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 564181570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ab1be58c3933eee40aee84d72a163ca0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1522636329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522636325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993be56cf6b96364cbafe9448463d9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint: {fileID: 704427175}
+  answer: HL
+  letterPositions:
+  - {fileID: 499679227}
+  - {fileID: 1127636817}
 --- !u!1 &1525789317
 GameObject:
   m_ObjectHideFlags: 0
@@ -45388,7 +45999,7 @@ GameObject:
   - component: {fileID: 1525789321}
   - component: {fileID: 1525789320}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (3)
+  m_Name: Rounded Rectangle_0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46209,7 +46820,7 @@ GameObject:
   - component: {fileID: 1553216649}
   - component: {fileID: 1553216648}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (5)
+  m_Name: Rounded Rectangle_0 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46357,7 +46968,7 @@ GameObject:
   - component: {fileID: 1553277080}
   - component: {fileID: 1553277079}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (22)
+  m_Name: Rounded Rectangle_0 (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48307,8 +48918,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1625754219}
   - component: {fileID: 1625754218}
+  - component: {fileID: 1625754221}
+  - component: {fileID: 1625754220}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (13)
+  m_Name: Rounded Rectangle_0 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48384,6 +48997,63 @@ Transform:
   - {fileID: 1370209038}
   m_Father: {fileID: 1055720453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1625754220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625754217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23907096931e4e4fabe7138e8511395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 564181572}
+        m_TargetAssemblyTypeName: Sc_LevelManager, Assembly-CSharp
+        m_MethodName: OpenButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1625754221}
+          m_ObjectArgumentAssemblyTypeName: Sc_HintInfo, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 564181570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ab1be58c3933eee40aee84d72a163ca0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1625754221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625754217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993be56cf6b96364cbafe9448463d9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint: {fileID: 1370209039}
+  answer: IHS
+  letterPositions:
+  - {fileID: 376617310}
+  - {fileID: 499679227}
+  - {fileID: 1316656428}
 --- !u!1 &1630752068
 GameObject:
   m_ObjectHideFlags: 0
@@ -49442,8 +50112,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1663840434}
   - component: {fileID: 1663840433}
+  - component: {fileID: 1663840436}
+  - component: {fileID: 1663840435}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (12)
+  m_Name: Rounded Rectangle_0 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49519,6 +50191,62 @@ Transform:
   - {fileID: 1458317626}
   m_Father: {fileID: 1055720453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1663840435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663840432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23907096931e4e4fabe7138e8511395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 564181572}
+        m_TargetAssemblyTypeName: Sc_LevelManager, Assembly-CSharp
+        m_MethodName: OpenButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1663840436}
+          m_ObjectArgumentAssemblyTypeName: Sc_HintInfo, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 564181570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ab1be58c3933eee40aee84d72a163ca0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1663840436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663840432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993be56cf6b96364cbafe9448463d9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint: {fileID: 1458317627}
+  answer: IV
+  letterPositions:
+  - {fileID: 1916836715}
+  - {fileID: 2112642625}
 --- !u!1 &1666137959
 GameObject:
   m_ObjectHideFlags: 0
@@ -49666,7 +50394,7 @@ GameObject:
   - component: {fileID: 1667096361}
   - component: {fileID: 1667096360}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (27)
+  m_Name: Rounded Rectangle_0 (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53480,8 +54208,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1803000773}
   - component: {fileID: 1803000772}
+  - component: {fileID: 1803000775}
+  - component: {fileID: 1803000774}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (18)
+  m_Name: Rounded Rectangle_0 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53557,6 +54287,67 @@ Transform:
   - {fileID: 858944579}
   m_Father: {fileID: 1055720453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1803000774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803000771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23907096931e4e4fabe7138e8511395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 564181572}
+        m_TargetAssemblyTypeName: Sc_LevelManager, Assembly-CSharp
+        m_MethodName: OpenButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1803000775}
+          m_ObjectArgumentAssemblyTypeName: Sc_HintInfo, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 564181570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: ab1be58c3933eee40aee84d72a163ca0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1803000775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803000771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993be56cf6b96364cbafe9448463d9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint: {fileID: 858944580}
+  answer: Aragain
+  letterPositions:
+  - {fileID: 1559786497}
+  - {fileID: 395670447}
+  - {fileID: 939946618}
+  - {fileID: 202118973}
+  - {fileID: 413061955}
+  - {fileID: 2026426610}
+  - {fileID: 1114004938}
 --- !u!1 &1804804268
 GameObject:
   m_ObjectHideFlags: 0
@@ -58380,7 +59171,7 @@ GameObject:
   - component: {fileID: 1970327529}
   - component: {fileID: 1970327528}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0
+  m_Name: Rounded Rectangle_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59912,7 +60703,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: K
+  m_text: R
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -61952,7 +62743,7 @@ GameObject:
   - component: {fileID: 2082482818}
   - component: {fileID: 2082482817}
   m_Layer: 0
-  m_Name: Rounded Rectangle_0 (24)
+  m_Name: Rounded Rectangle_0 (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
